@@ -11,7 +11,7 @@ img = cv2.imread('2.jpg')
 
 # Preprocess the image
 if img is not None:
-    img = cv2.resize(img, (224, 224))  # Resize to the input shape of the model
+    img = cv2.resize(img, (225, 225))  # Resize to the input shape of the model
     img = img / 255.  # Normalize pixel values
     img = np.expand_dims(img, axis=0)  # Add an extra dimension for batch size
 
